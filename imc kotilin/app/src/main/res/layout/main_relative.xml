@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/rel_titleTXT"
+        tools:visibility="visible"
+        android:textSize="48sp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/imc"
+        style="@style/title_purple" />
+
+    <EditText
+        android:id="@+id/rel_pesoEDT"
+        tools:visibility="visible"
+        android:layout_below="@id/rel_titleTXT"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:hint="@string/peso_kg"
+        android:layout_height="wrap_content"
+        style="@style/input_style"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/rel_alturaEDT"
+        tools:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_alignStart="@id/rel_pesoEDT"
+        android:layout_alignEnd="@id/rel_pesoEDT"
+        android:layout_below="@id/rel_pesoEDT"
+        android:hint="@string/altura_metros"
+        android:layout_height="wrap_content"
+        style="@style/input_style"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/rel_calculadoraBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:padding="16dp"
+        android:text="@string/calcular"
+        android:textSize="16sp"
+        tools:targetApi="lollipop"
+        tools:visibility="visible" />
+
+</RelativeLayout>
